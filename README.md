@@ -384,6 +384,10 @@ data: 2017-04-29 16:29:20  //Актуальность даты
 Еще не успел сделать диаграмму классов
 Вот что есть. 
 
+Там в корне проекта есть файль Agency.postman_collection.json это готовые запроса для приложение Postman
+
 Прикладываю схему таблиц.
+
+![alt tag](https://raw.githubusercontent.com/monster3d/Agency/database/database.jpg)
 
 
