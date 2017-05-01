@@ -162,8 +162,8 @@ $router->set404(function() {
 });
 
 $router->before('GET|POST|PUT', '/api/employee/', function() use($container) {
-    //$middleware = new \Monster3D\Agency\Middleware\EmployeeStatus($container);
-    //$middleware->execute();
+    $middleware = new \Monster3D\Agency\Middleware\EmployeeStatus($container);
+    $middleware->execute();
 });
 
 $router->run();
