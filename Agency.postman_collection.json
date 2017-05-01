@@ -1,0 +1,179 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Agency",
+		"_postman_id": "04282349-cef2-c1a9-26a8-a608c9a3db01",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add new employee",
+			"request": {
+				"url": "http://localhost:8080/api/employee/add",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "New",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "age",
+							"value": "37",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "weight",
+							"value": "82",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "gander",
+							"value": "male",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "color",
+							"value": "black",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "description",
+							"value": "From cat",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "rate",
+							"value": "6",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "cost",
+							"value": "300",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get employee",
+			"request": {
+				"url": "http://localhost:8080/api/employee/?limit=2&offset=1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Check status employee",
+			"request": {
+				"url": "http://localhost:8080/api/employee/status/id/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get info employee by id",
+			"request": {
+				"url": "http://localhost:8080/api/employee/info/id/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Rent employee",
+			"request": {
+				"url": "http://localhost:8080/api/employee/rent",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "employee_id",
+							"value": "2",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "from",
+							"value": "2017-04-29 16:29:20",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "to",
+							"value": "2017-04-29 20:30:20",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "action_id",
+							"value": "1",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "1",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Exchange add rate",
+			"request": {
+				"url": "http://localhost:8080/api/exchange/add",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cost",
+							"value": "10",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "data",
+							"value": "2017-04-29 16:29:20",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

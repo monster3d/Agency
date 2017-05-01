@@ -4,10 +4,6 @@
     "description": "PHP exchange",
     "keywords": ["api"],
     "license": "MIT",
-    "support": {
-        "issues": "https://github.com/akalongman/php-telegram-bot/issues",
-        "source": "https://github.com/akalongman/php-telegram-bot"
-    },
     "authors": [
         {
             "name": "Baev Nikolay",
@@ -19,11 +15,15 @@
         "php": ">=5.5.0",
         "ext-pdo": "*",
         "ext-curl": "*",
-        "bramus/router": "~1.0"
+        "bramus/router": "~1.0",
+        "nannehuiges/jsend": "^2.1",
+        "symfony/yaml": "^3.2",
+        "doctrine/dbal": "^2.5",
+        "wixel/gump": "^1.5"
     },
     "autoload": {
         "psr-4": {
-            "Monster3D\\Eexchange\\": "src/"
+            "Monster3D\\Agency\\": "src/"
         }
     },
     "autoload-dev": {
